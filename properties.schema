@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object"
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_printPage": {
+              "type": "object",
+              "required": false,
+              "legend": "Print Page",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Enable Print page button",
+                  "inputType": "Checkbox",
+                  "help": ""
+                },
+                "_showOn": {
+                  "type": "string",
+                  "required": false,
+                  "default": "bottom-of-page",
+                  "title": "Where to display",
+                  "inputType": {
+                    "type": "Select",
+                    "options": ["bottom-of-page", "navigation"]
+                  }
+                },
+                "text": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Print prompt text",
+                  "help": "Only works with bottom-of-page",
+                  "inputType": "Text",
+                  "default": "Click this link to view PDF version of this page."
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object"
+        },
+        "block": {
+          "type": "object"
+        },
+        "component": {
+          "type": "object"
+        },
+        "course": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

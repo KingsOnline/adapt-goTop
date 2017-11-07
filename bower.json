@@ -1,0 +1,20 @@
+{
+  "name": "adapt-printPage",
+  "repository": "git://github.com/KingsOnline/adapt-farfalla",
+  "framework": "^2.0.0",
+  "version": "1.2.5",
+  "displayName": "Print Page",
+  "extension": "Print Page",
+  "description": "Adds print page text to bottom of the page",
+  "main": "/js/adapt-printPage.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "authors": [
+    "Simon Date <simon.date@kcl.ac.uk>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/KingsOnline/adapt-printPage",
+  "targetAttribute": "_printPage"
+}
