@@ -1,12 +1,12 @@
 {
-  "name": "adapt-printPage",
-  "repository": "git://github.com/KingsOnline/adapt-farfalla",
+  "name": "adapt-goTop",
+  "repository": "git://github.com/KingsOnline/adapt-goTop",
   "framework": "^2.0.0",
   "version": "1.2.5",
-  "displayName": "Print Page",
-  "extension": "Print Page",
-  "description": "Adds print page text to bottom of the page",
-  "main": "/js/adapt-printPage.js",
+  "displayName": "Go top",
+  "extension": "goTop",
+  "description": "Button to jump to the top of the page",
+  "main": "/js/adapt-goTop.js",
   "keywords": [
     "adapt-plugin",
     "adapt-extension"
@@ -16,5 +16,5 @@
   ],
   "license": "GPL-3.0",
   "homepage": "https://github.com/KingsOnline/adapt-printPage",
-  "targetAttribute": "_printPage"
+  "targetAttribute": "_goTop"
 }
