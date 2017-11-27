@@ -1,16 +1,15 @@
-button.goTop {
+button.goTop-button {
   position: fixed;
   right: 50px;
-  bottom: 50px;
-  height: 32px;
-  width: 32px;
+  bottom: 110px;
+  height: 40px;
+  width: 40px;
   z-index: 10;
   padding: 0;
   color: @white;
-}
+  background-color: @navigation-color;
 
-.sticky-quicknav {
-  button.goTop {
-    botton: 100px;
+  .no-touch &:hover {
+    background-color: darken(@navigation-color, 10%);
   }
 }

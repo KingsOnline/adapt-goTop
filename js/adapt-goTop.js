@@ -4,11 +4,11 @@ define([
 
   var goTopView = Backbone.View.extend({
 
-    tagName: 'button',
-    className: 'goTop icon icon-arrow-up',
+    tagName: 'div',
+    className: 'goTop',
 
     events: {
-      'click': 'goTop'
+      'click .goTop-button': 'goTop'
     },
 
     initialize: function() {
