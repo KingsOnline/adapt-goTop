@@ -13,41 +13,7 @@
           "type": "object"
         },
         "contentobject": {
-          "type": "object",
-          "properties": {
-            "_printPage": {
-              "type": "object",
-              "required": false,
-              "legend": "Print Page",
-              "properties": {
-                "_isEnabled": {
-                  "type": "boolean",
-                  "default": true,
-                  "title": "Enable Print page button",
-                  "inputType": "Checkbox",
-                  "help": ""
-                },
-                "_showOn": {
-                  "type": "string",
-                  "required": false,
-                  "default": "bottom-of-page",
-                  "title": "Where to display",
-                  "inputType": {
-                    "type": "Select",
-                    "options": ["bottom-of-page", "navigation"]
-                  }
-                },
-                "text": {
-                  "type": "string",
-                  "required": false,
-                  "title": "Print prompt text",
-                  "help": "Only works with bottom-of-page",
-                  "inputType": "Text",
-                  "default": "Click this link to view PDF version of this page."
-                }
-              }
-            }
-          }
+          "type": "object"
         },
         "article": {
           "type": "object"
@@ -59,7 +25,43 @@
           "type": "object"
         },
         "course": {
-          "type": "object"
+          "type": "object",
+          "properties": {
+            "_goTop": {
+              "type": "object",
+              "required": false,
+              "legend": "Go top",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "title": "Enable button to return to top of the page",
+                  "inputType": "Checkbox"
+                },
+                "_scrollListener": {
+                  "type": "object",
+                  "required": false,
+                  "legend": "Scroll listener",
+                  "properties": {
+                    "_isEnabled": {
+                      "type": "boolean",
+                      "default": true,
+                      "title": "Enable to listen to the page to show/hide the button",
+                      "inputType": "Checkbox"
+                    },
+                    "_offset": {
+                        "type": "number",
+                        "required": false,
+                        "default": 600,
+                        "title": "Offset before the button is shown",
+                        "inputType": "Number",
+                        "validators": ["number"]
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
