@@ -1,6 +1,8 @@
-//contentObjects.json
-"_printPage": {
+//course.json
+"_goTop": {
   "_isEnabled": true,
-  "text": "Click here to print your page",
-  "_showOn": "navigation"
+  "_scrollListener": {
+    "_isEnabled": true,
+    "_offset": 600
+  }
 }
