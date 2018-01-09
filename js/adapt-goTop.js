@@ -39,7 +39,7 @@ define([
       } else {
         $('.goTop').hide();
       }
-    }, 50),
+    }, 100),
 
     goTop: function() {
       console.log(Adapt.location);
