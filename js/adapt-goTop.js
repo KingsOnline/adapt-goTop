@@ -20,7 +20,6 @@ define([
 
     startScrollListener: function() {
       if (!Adapt.course.get('_goTop')._scrollListener._isEnabled) return;
-      console.log('liste');
       var context = this;
       $(window).on('scroll.goTop', function() {
         context.checkIfBottom();
@@ -33,7 +32,6 @@ define([
 
     checkIfBottom: _.throttle(function() {
       var viewportTop = $(window).scrollTop();
-      console.log(viewportTop);
       if (viewportTop >= Adapt.course.get('_goTop')._scrollListener._offset) {
         $('.goTop').show();
       } else {
@@ -42,9 +40,7 @@ define([
     }, 50),
 
     goTop: function() {
-      console.log(Adapt.location);
       var $page = $('.' + Adapt.location._currentId);
-      console.log($page);
       Adapt.scrollTo($page, {
         duration: 400
       });
