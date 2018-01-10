@@ -37,7 +37,7 @@ define([
       } else {
         $('.goTop').hide();
       }
-    }, 50),
+    }, 100),
 
     goTop: function() {
       var $page = $('.' + Adapt.location._currentId);
