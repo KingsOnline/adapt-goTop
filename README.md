@@ -1,6 +1,7 @@
+<img align="right" src="https://cdn.rawgit.com/KingsOnline/repo-files/2d020b71/gotop.gif" alt="An example of the go top extension">
+
 # adapt-goTop  
 
-<img align="right" src="https://cdn.rawgit.com/KingsOnline/repo-files/2d020b71/gotop.gif" alt="An example of the go top extension">
 
 **goTop** is an *extension* for the [Adapt framework](https://github.com/adaptlearning/adapt_framework). It adds a button to the course that when clicked returns the learner to the top of the current page.
 
